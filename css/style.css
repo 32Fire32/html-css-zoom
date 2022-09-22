@@ -9,6 +9,8 @@
 
 body {
     font-family: 'Lato', sans-serif;
+    color:#fff;
+    font-size: 1vw;
 }
 
 /* COMMON */
@@ -25,11 +27,13 @@ a {
 
 i {
     color:#fff;
+    display: block;
 }
 
 .container {
     width: 90%;
     margin: auto;
+    padding-top:50px;
 }
 
 .row {
@@ -50,38 +54,126 @@ i {
 
 header {
     text-align:right;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
 }
 
 /* MAIN */
 
-.img {
-    background-color: aquamarine;
-    position: relative;
-    height: 20vh;
-}
-
-.testo {
-    width:100%;
-    height:10%;
-    background-color: rgba(0, 0, 0, 0.8);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
 .col {
     width: calc(100% / 7 - 20px);
     margin: 10px;
-    background-color: aqua;
+}
+
+.video {
+    position: relative;
+}
+
+.preview {
+    width: 100%;
+    display: block;
+}
+
+.testo {
+    height: 15%;    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    line-height: 20px;
+}
+
+.mic-muted {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
 }
 
 /* FOOTER */
 
 footer {
+    display: flex;
+    justify-content: space-between;
     position: fixed;
     bottom:0;
     left:0;
     right: 0;
     height: 80px;
-    background-color: #4a4a4a; 
+    background-color: #222222; 
+    font-size:14px;
+    font-weight: 300;
 }
+
+.controls-left {
+    width:20%;
+    display: flex;
+    align-items: center;
+}
+
+
+.mute {
+    width: 20%;
+    text-align: center;
+}
+
+.stop {
+    width: 20%;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.chevron {
+    text-align: center;
+    width: 5%;
+}
+
+.controls-center {
+    width:60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.list-mod {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    margin: 0 10px;
+}
+
+.fa-share-square {
+    color: #4bc800;
+}
+
+.controls-right {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fa-angle-up {
+    margin-top: 20px;
+}
+
+.listflex {
+    display: flex;
+}
+
+.fas {
+    margin-bottom: 5px;
+}
+
+.end {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    height: 80px;
+    background-color: #4a4a4a;
+    text-align: center;
+    color:red;
+    padding: 0 20px;
+}
+
+
